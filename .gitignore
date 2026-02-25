@@ -19,3 +19,6 @@ deploy.sh
 deploy.bat
 quickstart.bat
 test-api.html
+
+# Exclude backend from frontend deployment
+!public/
