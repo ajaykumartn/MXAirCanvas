@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MX AirCanvas3D - Transform Physical Gestures into Digital Creativity</title>
+    <meta name="description" content="Revolutionary spatial 3D drawing system using just a webcam. Draw in air, create in 3D, instantly.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-text">MX AirCanvas<span class="highlight">3D</span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#contact" class="btn-primary">Get Started</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Transform <span class="highlight">Physical Gestures</span><br>
+                        into <span class="highlight">Digital Creativity</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Revolutionary spatial 3D drawing system using just a webcam.<br>
+                        <span class="highlight">Draw in air. Create in 3D. Instantly.</span>
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number highlight">&lt;50ms</span>
+                            <span class="stat-label">Latency</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number highlight">95%+</span>
+                            <span class="stat-label">Accuracy</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number highlight">$0</span>
+                            <span class="stat-label">Hardware Cost</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn-primary btn-large">Start Creating Free</a>
+                        <a href="#demo" class="btn-secondary btn-large">Watch Demo</a>
+                    </div>
+                    <p class="hero-note">
+                        <i class="fas fa-sparkles"></i> No special hardware required • Works with any webcam
+                    </p>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-container">
+                        <div class="floating-hand">
+                            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="handGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00B8FC;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Hand outline -->
+                                <path d="M200,100 L220,150 L240,180 L250,220 L240,260 L220,280 L200,290 L180,280 L160,260 L150,220 L160,180 L180,150 Z" 
+                                      fill="none" stroke="url(#handGradient)" stroke-width="3" class="draw-path"/>
+                                <!-- Gesture trail -->
+                                <circle cx="250" cy="150" r="8" fill="#00B8FC" opacity="0.8" class="pulse"/>
+                                <circle cx="270" cy="180" r="6" fill="#00B8FC" opacity="0.6" class="pulse" style="animation-delay: 0.2s"/>
+                                <circle cx="280" cy="220" r="4" fill="#00B8FC" opacity="0.4" class="pulse" style="animation-delay: 0.4s"/>
+                            </svg>
+                        </div>
+                        <div class="floating-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The <span class="highlight">Creative Workflow</span> Problem</h2>
+                <p>Traditional 3D modeling is slow, complex, and unintuitive</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>40% Time Wasted</h3>
+                    <p>Creative professionals spend <span class="highlight">40% of their time</span> navigating interfaces instead of creating</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-mouse"></i>
+                    </div>
+                    <h3>2D Input for 3D Work</h3>
+                    <p>Forced to translate <span class="highlight">3D ideas through 2D inputs</span> - like sculpting with oven mitts</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Steep Learning Curve</h3>
+                    <p><span class="highlight">Months of training</span> required to master complex 3D software tools</p>
+                </div>
+            </div>
+            <div class="comparison">
+                <div class="comparison-item old">
+                    <h4>Traditional Method</h4>
+                    <p class="time"><i class="fas fa-hourglass-half"></i> 2 minutes</p>
+                    <p>Click, drag, menu navigation, toolbar switching...</p>
+                </div>
+                <div class="comparison-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="comparison-item new">
+                    <h4>With <span class="highlight">MX AirCanvas3D</span></h4>
+                    <p class="time highlight"><i class="fas fa-bolt"></i> 5 seconds</p>
+                    <p>Natural gesture, instant creation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Draw in Air. <span class="highlight">Create in 3D.</span> Instantly.</h2>
+                <p>First spatial input system using just a webcam - no special hardware required</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Computer Vision</h3>
+                    <p>MediaPipe hand tracking with <span class="highlight">&lt;50ms latency</span></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> 21-point hand landmark detection</li>
+                        <li><i class="fas fa-check-circle"></i> Kalman filter smoothing</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time processing</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <h3>Gesture Control</h3>
+                    <p>Natural hand gestures for <span class="highlight">all interactions</span></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Pinch to adjust size</li>
+                        <li><i class="fas fa-check-circle"></i> Fist to switch modes</li>
+                        <li><i class="fas fa-check-circle"></i> Swipe to undo/redo</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Recognition</h3>
+                    <p>Gesture-to-3D object with <span class="highlight">95%+ accuracy</span></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Circle → Sphere</li>
+                        <li><i class="fas fa-check-circle"></i> Square → Cube</li>
+                        <li><i class="fas fa-check-circle"></i> Line → Cylinder</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How <span class="highlight">It Works</span></h2>
+                <p>From gesture to 3D object in milliseconds</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Hand Detection</h3>
+                        <p>Your webcam detects your hand and tracks <span class="highlight">21 key landmarks</span> in real-time</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Gesture Recognition</h3>
+                        <p>AI analyzes your movement pattern and recognizes <span class="highlight">shapes and commands</span></p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>3D Generation</h3>
+                        <p>Your gesture instantly becomes a <span class="highlight">3D object</span> on your canvas</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Export & Create</h3>
+                        <p>Export to <span class="highlight">Blender, Figma, Photoshop</span> and continue your workflow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="core-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Revolutionary <span class="highlight">Interaction Model</span></h2>
+            </div>
+            <div class="features-showcase">
+                <div class="showcase-item">
+                    <div class="showcase-visual">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>Air Drawing</h3>
+                    <p>Sketch in 3D space with natural hand movements. Your finger becomes a <span class="highlight">3D brush</span>.</p>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-visual">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Gesture Control</h3>
+                    <p><span class="highlight">Pinch</span> for size, <span class="highlight">fist</span> to switch modes, <span class="highlight">swipe</span> to undo</p>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-visual">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Shape Recognition</h3>
+                    <p>Draw shapes that instantly become 3D objects. <span class="highlight">Circle→Sphere, Square→Cube</span></p>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-visual">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>App Integration</h3>
+                    <p>Export to your favorite creative apps: <span class="highlight">Blender, Figma, Photoshop</span></p>
+                </div>
+            </div>
+            <div class="premium-badge">
+                <p><i class="fas fa-bolt"></i> <span class="highlight">Premium:</span> Add Logitech MX Ring for enhanced precision and speed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your <span class="highlight">Creative Power</span></h2>
+                <p>Start free, upgrade when you're ready</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="amount">$0</span>
+                            <span class="period">/forever</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Basic air drawing</li>
+                        <li><i class="fas fa-check"></i> 5 core gestures</li>
+                        <li><i class="fas fa-check"></i> 1 app integration</li>
+                        <li><i class="fas fa-check"></i> Community support</li>
+                        <li><i class="fas fa-check"></i> Webcam only</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="amount highlight">$9.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <span class="highlight">Unlimited gestures</span></li>
+                        <li><i class="fas fa-check"></i> <span class="highlight">All app integrations</span></li>
+                        <li><i class="fas fa-check"></i> Custom gesture training</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Cloud sync</li>
+                        <li><i class="fas fa-check"></i> Advanced AI recognition</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Start Pro Trial</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="amount">$14.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Pro</li>
+                        <li><i class="fas fa-check"></i> <span class="highlight">Logitech MX Ring support</span></li>
+                        <li><i class="fas fa-check"></i> Enhanced precision</li>
+                        <li><i class="fas fa-check"></i> Hardware-specific features</li>
+                        <li><i class="fas fa-check"></i> Haptic feedback</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Go Premium</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="amount">$49</span>
+                            <span class="period">/user/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Premium</li>
+                        <li><i class="fas fa-check"></i> Team collaboration</li>
+                        <li><i class="fas fa-check"></i> Custom integrations</li>
+                        <li><i class="fas fa-check"></i> On-premise deployment</li>
+                        <li><i class="fas fa-check"></i> Dedicated support</li>
+                        <li><i class="fas fa-check"></i> Analytics dashboard</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>See <span class="highlight">It In Action</span></h2>
+                <p>Watch how natural gestures become 3D creations</p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-video">
+                    <div class="video-placeholder">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <p>Demo Video</p>
+                    </div>
+                </div>
+                <div class="demo-stats">
+                    <div class="demo-stat">
+                        <span class="stat-value highlight">45ms</span>
+                        <span class="stat-label">Average Latency</span>
+                    </div>
+                    <div class="demo-stat">
+                        <span class="stat-value highlight">97%</span>
+                        <span class="stat-label">Gesture Accuracy</span>
+                    </div>
+                    <div class="demo-stat">
+                        <span class="stat-value highlight">60 FPS</span>
+                        <span class="stat-label">Rendering Speed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perfect For <span class="highlight">Every Creator</span></h2>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <h3>3D Artists</h3>
+                    <p>Rapid prototyping and <span class="highlight">concept sketching</span> in 3D space</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Designers</h3>
+                    <p>Quick <span class="highlight">ideation and iteration</span> without complex tools</p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Architects</h3>
+                    <p>Spatial planning and <span class="highlight">volumetric studies</span></p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Educators</h3>
+                    <p>Teaching 3D concepts with <span class="highlight">intuitive demonstrations</span></p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Students</h3>
+                    <p>Learning 3D creation without <span class="highlight">expensive software</span></p>
+                </div>
+                <div class="use-case-card">
+                    <h3>Hobbyists</h3>
+                    <p>Exploring creativity with <span class="highlight">zero barrier to entry</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to <span class="highlight">Transform</span> Your Creativity?</h2>
+                <p>Join thousands of creators who are already drawing in 3D</p>
+                <div class="cta-icons">
+                    <i class="fas fa-users"></i>
+                    <i class="fas fa-rocket"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <form class="signup-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary"><i class="fas fa-rocket"></i> Start Creating Free</button>
+                </form>
+                <p class="form-note"><i class="fas fa-sparkles"></i> No credit card required • Start in under 2 minutes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MX AirCanvas<span class="highlight">3D</span></h4>
+                    <p>Transform physical gestures into digital creativity</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Community</a>
+                    <a href="#">API Docs</a>
+                    <a href="#">Status</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MX AirCanvas3D. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

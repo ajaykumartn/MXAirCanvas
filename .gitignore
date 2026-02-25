@@ -1,0 +1,21 @@
+node_modules/
+.wrangler/
+.dev.vars
+dist/
+*.log
+.DS_Store
+
+# Exclude documentation files from deployment
+*.md
+DEPLOYMENT_GUIDE.txt
+START_HERE.txt
+
+# Keep only essential files for frontend
+src/
+schema.sql
+wrangler.toml
+package.json
+deploy.sh
+deploy.bat
+quickstart.bat
+test-api.html
